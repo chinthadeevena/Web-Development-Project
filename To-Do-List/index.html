@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful To-Do List</title>
+ 
+<link rel="stylesheet" href="style.css">
+ 
+</head>
+ 
+<body>
+ 
+<div class="container">
+ 
+<h1>🌈 To-Do List</h1>
+ 
+<p class="subtitle">
+✨ Plan Today • Complete Tomorrow ✨
+</p>
+ 
+<input
+type="text"
+id="taskInput"
+placeholder="Enter your task">
+ 
+<input
+type="date"
+id="taskDate">
+ 
+<select id="priority">
+<option value="High">🔴 High</option>
+<option value="Medium">🟠 Medium</option>
+<option value="Low">🟢 Low</option>
+</select>
+ 
+<button id="addBtn">
+➕ Add Task
+</button>
+ 
+<button id="clearBtn">
+🗑 Clear All
+</button>
+ 
+<br><br>
+ 
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search task">
+ 
+<select id="filter">
+<option value="all">All Tasks</option>
+<option value="pending">Pending</option>
+<option value="completed">Completed</option>
+</select>
+ 
+<h3 id="counter">
+Total: 0 | Completed: 0 | Pending: 0
+</h3>
+ 
+<ol id="taskList"></ol>
+ 
+</div>
+ 
+ 
+<script src="script.js"></script>
+ 
+ 
+</body>
+</html>
